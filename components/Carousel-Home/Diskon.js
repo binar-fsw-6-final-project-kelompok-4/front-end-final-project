@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image"
+import {Image}  from "react-bootstrap";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
