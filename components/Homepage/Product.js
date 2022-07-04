@@ -1,5 +1,5 @@
 import {Button} from "react-bootstrap";
-
+import Image from "next/image"
 import { getInitialData } from "../../data/data.js";
 
 export default function Product(params) {
@@ -15,7 +15,7 @@ export default function Product(params) {
                             src=""
                             onClick={() => params.setProduct(getInitialData())}
                         ><div>
-                                <img
+                                <Image
                                     src="images/fi_search.png"
                                     alt="Foto"
                                     className="img-fluid"
@@ -31,7 +31,7 @@ export default function Product(params) {
                                     onClick={() => params.filterItem(kategori)}
                                     key={params.id}
                                 ><div>
-                                        <img
+                                        <Image
                                             src="images/fi_search_black.png"
                                             alt="Foto"
                                             className="img-fluid "
@@ -49,7 +49,7 @@ export default function Product(params) {
                         {params.data.length === 0 ? (
                             <div className="d-flex justify-content-center null-illustration p-5">
                                 <div>
-                                    <img src="images/ilustrasi.svg" alt="" className="img-fluid mb-3" />
+                                    <Image src="images/ilustrasi.svg" alt="" className="img-fluid mb-3" />
                                     <p>Produk tidak ditemukan</p>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ export default function Product(params) {
                                         key={item.id}
                                     >
                                         <div className="card-product p-3 mb-4">
-                                            <img
+                                            <Image
                                                 src={item.image}
                                                 alt="Foto"
                                                 className="img-fluid mb-3"

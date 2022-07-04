@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -30,13 +30,13 @@ export default function App() {
                 className="mySwiper mt-5 mb-5"
             >
                 <SwiperSlide className="swiper-slide">
-                    <img src="images/imgBanner.png" alt="imageBanner" />
+                    <Image src="images/imgBanner.png" alt="imageBanner" />
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
-                    <img src="images/imgBanner-2.jpg" alt="imageBanner" />
+                    <Image src="images/imgBanner-2.jpg" alt="imageBanner" />
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
-                    <img src="images/imgBanner-3.jpg" alt="imageBanner" />
+                    <Image src="images/imgBanner-3.jpg" alt="imageBanner" />
                 </SwiperSlide>
             </Swiper>
         </>
