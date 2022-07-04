@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "./tambahproduk.module.css";
-import Link from "next/link";
 
 export default function tambahproduk(){
     return(
