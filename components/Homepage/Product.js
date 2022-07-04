@@ -1,5 +1,6 @@
 import {Button} from "react-bootstrap";
-import Image from "next/image"
+import {Image} from "react-bootstrap";
+
 import { getInitialData } from "../../data/data.js";
 
 export default function Product(params) {
