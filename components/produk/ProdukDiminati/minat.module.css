@@ -1,0 +1,123 @@
+@media screen and (min-width:992px){
+    .MainCard{
+    /* position: absolute; */
+    background-color: #EB5757;
+    border: 1px solid #EB5757;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 26px;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    -ms-border-radius: 26px;
+    -o-border-radius: 26px;
+    padding: 20px 50px;
+    }
+
+    .judulCard label{
+        padding: 10px;
+        font-size: 25px;
+        color: white;
+    }
+
+    .CardProduct{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .MainProduct{
+        width: fit-content;
+        height: fit-content;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin: 10px;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .MainProduct img{
+        width: 190px;
+        height: 100px;
+    }
+
+    /* Awal Style Deskripsi Produk */
+    .deskripsiProduk{
+        padding-top: 10px;
+    }
+    .deskripsiProduk label{
+        font-size: 20px;
+    }
+    .deskripsiProduk p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .deskripsiProduk h4{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    /* Akhir Style Deskripsi Produk */
+}
+
+@media screen and (max-width:428px){
+    .MainCard{
+    border-radius: 26px;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    -ms-border-radius: 26px;
+    -o-border-radius: 26px;
+    }
+
+    .judulCard{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .judulCard label{
+        padding: 10px;
+        font-size: 35px;
+        color: #EB5757;
+    }
+
+    .CardProduct{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 1ch;
+        column-gap: 1ch;
+        padding-left: 0.2ch;
+        /* border: 5px solid yellow; */
+    }
+
+    .MainProduct{
+        width: max-content;
+        height: fit-content;
+        background-color: #EB5757;
+        color: #FFFFFF;
+        border: 1px solid #EB5757;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        padding: 10px 10px 0px 10px;
+        text-align: center;
+    }
+
+    .MainProduct img{
+        width: 140px;
+        height: 100px;
+    }
+
+    /* Awal Style Deskripsi Produk */
+    .deskripsiProduk{
+        padding-top: 10px;
+    }
+    .deskripsiProduk label{
+        font-size: 20px;
+    }
+    .deskripsiProduk p{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .deskripsiProduk h4{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    /* Akhir Style Deskripsi Produk */
+}
