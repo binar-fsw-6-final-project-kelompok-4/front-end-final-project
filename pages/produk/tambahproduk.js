@@ -1,12 +1,12 @@
 import Navbar from "../../components/Navbar/Navbar";
-import Profil from "../../components/profil"
+import Tambahproduk from "../../components/produk/AddProduk";
 import Footer from "../../components/Footer/Footer";
 
-export default function profil() {
+export default function tambahproduk() {
     return (
         <div>
             <Navbar />
-            <Profil />
+            <Tambahproduk />
             <Footer />
         </div>
     )

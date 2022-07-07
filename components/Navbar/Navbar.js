@@ -8,6 +8,7 @@ import {
 
 import { FiLogIn } from "react-icons/fi";
 import React from "react";
+import Link from "next/link";
 
 function NavbarComponent() {
     return (
@@ -35,13 +36,15 @@ function NavbarComponent() {
                             </Form>
                         </Nav>
                     </Navbar.Collapse>
-                    <Button
-                        className="ms-auto radius-secondary bg-color-primary border-0"
-                        variant="primary" href="/login"
-                    >
-                        <FiLogIn className="me-1 mb-1" />
-						Masuk
-					</Button>
+                    <Link href="/login">
+                        <Button
+                            className="ms-auto radius-secondary bg-color-primary border-0"
+                            variant="primary" href="/login"
+                        >
+                            <FiLogIn className="me-1 mb-1" />
+                            Masuk
+                        </Button>
+                    </Link>
                 </Container>
             </Navbar>
         </>

@@ -1,6 +1,7 @@
 import Script from 'next/script';
 import { useState } from "react";
 import Styles from "./produk.module.css";
+import Link from "next/link";
 
 import AllProduk from "./AllProduk";
 import Intersted from "./ProdukDiminati";
@@ -23,11 +24,13 @@ export default function Produk() {
                     <label>Kategori</label>
 
                     <div className={Styles.TambahProduct}>
-                        <button>
+                        <Link href="/produk/tambahproduk">
+                            <button>
                             <img src="/Assets/add.png" />
                             <span>Tambah Produk</span>
                             <img className={Styles.arrowProduk} src="/Assets/add.svg" />
                         </button>
+                        </Link>
                     </div>
                     <div className={Styles.AllProduk}>
                         <button onClick={() => SetShow("produk")}>

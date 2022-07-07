@@ -1,12 +1,12 @@
 import Navbar from "../../components/Navbar/Navbar";
-import Profil from "../../components/profil"
+import Preview from "../../components/HalamanProduk/Preview"
 import Footer from "../../components/Footer/Footer";
 
-export default function profil() {
+export default function produkpreview() {
     return (
         <div>
             <Navbar />
-            <Profil />
+            <Preview />
             <Footer />
         </div>
     )
