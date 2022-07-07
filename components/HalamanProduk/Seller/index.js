@@ -1,8 +1,8 @@
-import Head from "next/head"
-import Image from "next/image"
-import styles from "./halaman.module.css"
+import Head from "next/head";
+import styles from "./halamanprodukseller.module.css"
+import Image from "next/image";
 
-export default function product(){
+export default function Halamanseller(){
     return(
         <div className={styles.container}>
             <Head>
@@ -56,7 +56,7 @@ export default function product(){
                             <p className={styles.kategoriproduct}>Aksesoris</p>
                             <p className={styles.hargaproduct}>Rp. 250.000</p>
                         </div>
-                        <button className={styles.btn}>Nego barang</button>
+                        <button className={styles.btn}>Edit</button>
                     </div>
                     <div className={styles.seller}>
                         <div className={styles.gambarseller}>
@@ -65,23 +65,6 @@ export default function product(){
                         <div className={styles.detailseller}>
                             <p className={styles.namaseller}>Nama Penjual</p>
                             <p className={styles.kotaseller}>Kota</p>
-                        </div>
-                    </div>
-                    <div className={styles.productlain}>
-                        <p className={styles.judulkonten}>Product Sejenis</p>
-                        <div className={styles.konten}>
-                            <div className={styles.product1}>
-                                <Image src='/Jam.jpeg' width={100} height={50} alt=''></Image>
-                                <p className={styles.judulproductlain}>Jam Tangan Casio</p>
-                                <p className={styles.kategoriproductlain}>Aksesoris</p>
-                                <p className={styles.hargaproductlain}>Rp. 250.000</p>
-                            </div>
-                            <div className={styles.product2}>
-                                <Image src='/Jam.jpeg' width={100} height={50} alt=''></Image>
-                                <p className={styles.judulproductlain}>Jam Tangan Casio</p>
-                                <p className={styles.kategoriproductlain}>Aksesoris</p>
-                                <p className={styles.hargaproductlain}>Rp. 250.000</p>
-                            </div>
                         </div>
                     </div>
             </div>

@@ -1,12 +1,12 @@
 import Head from "next/head";
-import styles from "./halamanprodukseller.module.css"
-import Image from "next/image";
+import Image from "next/image"
+import styles from "./preview.module.css"
 
-export default function halamanseller(){
+export default function Preview(){
     return(
         <div className={styles.container}>
             <Head>
-                <title>SeconHand. | Halaman Produk</title>
+                <title>SecondHand. | Halaman Produk</title>
                 <link rel="icon" href="/favicon.ico"/>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -56,7 +56,8 @@ export default function halamanseller(){
                             <p className={styles.kategoriproduct}>Aksesoris</p>
                             <p className={styles.hargaproduct}>Rp. 250.000</p>
                         </div>
-                        <button className={styles.btn}>Edit</button>
+                        <button className={styles.btn}>Terbitkan</button>
+                        <button className={styles.btn2}>Edit</button>
                     </div>
                     <div className={styles.seller}>
                         <div className={styles.gambarseller}>

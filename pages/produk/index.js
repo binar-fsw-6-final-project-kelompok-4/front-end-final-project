@@ -1,7 +1,13 @@
+import Navbar from "../../components/Navbar/Navbar";
 import Produk from "../../components/produk"
+import Footer from "../../components/Footer/Footer";
 
 export default function index() {
     return (
-        <Produk />
+        <div>
+            <Navbar />
+            <Produk />
+            <Footer />
+        </div>
     )
 }

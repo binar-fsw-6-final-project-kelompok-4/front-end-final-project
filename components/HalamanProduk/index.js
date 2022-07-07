@@ -1,12 +1,12 @@
-import Head from "next/head";
+import Head from "next/head"
 import Image from "next/image"
-import styles from "./preview.module.css"
+import styles from "./halaman.module.css"
 
-export default function preview(){
+export default function Product(){
     return(
         <div className={styles.container}>
             <Head>
-                <title>SecondHand. | Halaman Produk</title>
+                <title>SeconHand. | Halaman Produk</title>
                 <link rel="icon" href="/favicon.ico"/>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -43,7 +43,7 @@ export default function preview(){
                             </div>    
                         </div>
                         
-                         <div className={styles.deskripsi}>
+                        <div className={styles.deskripsi}>
                             <p className={styles.juduldeskripsi}>DESKRIPSI</p>
                             <p className={styles.detaildeskripsi}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
@@ -56,8 +56,7 @@ export default function preview(){
                             <p className={styles.kategoriproduct}>Aksesoris</p>
                             <p className={styles.hargaproduct}>Rp. 250.000</p>
                         </div>
-                        <button className={styles.btn}>Terbitkan</button>
-                        <button className={styles.btn2}>Edit</button>
+                        <button className={styles.btn}>Nego barang</button>
                     </div>
                     <div className={styles.seller}>
                         <div className={styles.gambarseller}>
@@ -66,6 +65,23 @@ export default function preview(){
                         <div className={styles.detailseller}>
                             <p className={styles.namaseller}>Nama Penjual</p>
                             <p className={styles.kotaseller}>Kota</p>
+                        </div>
+                    </div>
+                    <div className={styles.productlain}>
+                        <p className={styles.judulkonten}>Product Sejenis</p>
+                        <div className={styles.konten}>
+                            <div className={styles.product1}>
+                                <Image src='/Jam.jpeg' width={100} height={50} alt=''></Image>
+                                <p className={styles.judulproductlain}>Jam Tangan Casio</p>
+                                <p className={styles.kategoriproductlain}>Aksesoris</p>
+                                <p className={styles.hargaproductlain}>Rp. 250.000</p>
+                            </div>
+                            <div className={styles.product2}>
+                                <Image src='/Jam.jpeg' width={100} height={50} alt=''></Image>
+                                <p className={styles.judulproductlain}>Jam Tangan Casio</p>
+                                <p className={styles.kategoriproductlain}>Aksesoris</p>
+                                <p className={styles.hargaproductlain}>Rp. 250.000</p>
+                            </div>
                         </div>
                     </div>
             </div>

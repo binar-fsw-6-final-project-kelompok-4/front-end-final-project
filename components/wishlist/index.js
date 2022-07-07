@@ -2,7 +2,7 @@ import styles from "./wishlist.module.css"
 import Head from "next/head"
 import Image from "next/image"
 
-export default function wishlist(){
+export default function Wishlist(){
     return(
         <div className={styles.container}>
             <Head>

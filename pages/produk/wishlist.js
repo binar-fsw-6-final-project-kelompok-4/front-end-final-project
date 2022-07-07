@@ -1,12 +1,12 @@
 import Navbar from "../../components/Navbar/Navbar";
-import Profil from "../../components/profil"
+import Wishlist from '../../components/wishlist'
 import Footer from "../../components/Footer/Footer";
 
-export default function profil() {
+export default function WishList() {
     return (
         <div>
             <Navbar />
-            <Profil />
+            <Wishlist />
             <Footer />
         </div>
     )

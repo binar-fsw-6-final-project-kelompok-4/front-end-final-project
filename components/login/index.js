@@ -18,7 +18,9 @@ export default function Login(){
                         <form action="/login" method="POST">
                             <div className={Styles.box}>
                                 <div className={Styles.header}>
-                                    <h2 align="center">LOGIN</h2>
+                                    <Link href="/login">
+                                        <h2 align="center">LOGIN</h2>
+                                    </Link>
                                 </div>
 
                                 <div className={Styles.email} align="center">

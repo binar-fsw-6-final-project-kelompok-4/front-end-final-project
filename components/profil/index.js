@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Profil = () => {
     return (
-        <div className={Styles.containerBody}>
+        <div className={Styles.containerProfil}>
 
             <div className={Styles.dashboard}>
                 <Image src="/logo.jpg" width={350} height={350} />

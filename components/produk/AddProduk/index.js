@@ -1,7 +1,8 @@
 import Head from "next/head";
 import styles from "./tambahproduk.module.css";
+import Link from "next/link";
 
-export default function tambahproduk(){
+export default function Tambahproduk(){
     return(
         <div className={styles.container}>
             <Head>
@@ -45,7 +46,9 @@ export default function tambahproduk(){
                         </div>
 
                         <div className={styles.buttonproduct}>
-                            <input type="submit" className={styles.button} name="submit" value="Preview"></input>
+                            <Link href="/produk/produkpreview">
+                                <input type="submit" className={styles.button} name="submit" value="Preview"></input>
+                            </Link>
                             <input type="submit" className={styles.button1} name="submit" value="Terbitkan"></input>
                         </div>
                     </form>
