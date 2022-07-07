@@ -3,62 +3,62 @@ import Image from 'next/image';
 
 export default function AllProduk() {
     return(
-        <div className={Styles.MainCard}>
+        <div className={Styles.ContainerAllProduk}>
 
-            <div className={Styles.judulCard}>
+            <div className={Styles.judulAllProduk}>
                 <label>Product</label>
             </div>
                     
-            <div className={Styles.CardProduct}>
+            <div className={Styles.CardAllProduk}>
 
-                <div className={Styles.MainProduct}>
+                <div className={Styles.RowAllProduk}>
                     <img src="/Assets/jam.png" />
-                    <div className={Styles.deskripsiProduk}>
+                    <div className={Styles.deskripsiAllProduk}>
                         <label>Jam Tangan Casio</label>
                         <p>Aksesoris</p>
                         <h4>Rp 250.000</h4>
                     </div>
                 </div>
 
-                <div className={Styles.MainProduct}>
+                <div className={Styles.RowAllProduk}>
                     <img src="/Assets/jam.png" />
-                    <div className={Styles.deskripsiProduk}>
+                    <div className={Styles.deskripsiAllProduk}>
                         <label>Jam Tangan Casio</label>
                         <p>Aksesoris</p>
                         <h4>Rp 250.000</h4>
                     </div>
                 </div>
 
-                <div className={Styles.MainProduct}>
+                <div className={Styles.RowAllProduk}>
                     <img src="/Assets/jam.png" />
-                    <div className={Styles.deskripsiProduk}>
+                    <div className={Styles.deskripsiAllProduk}>
                         <label>Jam Tangan Casio</label>
                         <p>Aksesoris</p>
                         <h4>Rp 250.000</h4>
                     </div>
                 </div>
 
-                <div className={Styles.MainProduct}>
+                <div className={Styles.RowAllProduk}>
                     <img src="/Assets/jam.png" />
-                    <div className={Styles.deskripsiProduk}>
+                    <div className={Styles.deskripsiAllProduk}>
                         <label>Jam Tangan Casio</label>
                         <p>Aksesoris</p>
                         <h4>Rp 250.000</h4>
                     </div>
                 </div>
 
-                <div className={Styles.MainProduct}>
+                <div className={Styles.RowAllProduk}>
                     <img src="/Assets/jam.png" />
-                    <div className={Styles.deskripsiProduk}>
+                    <div className={Styles.deskripsiAllProduk}>
                         <label>Jam Tangan Casio</label>
                         <p>Aksesoris</p>
                         <h4>Rp 250.000</h4>
                     </div>
                 </div>
 
-                <div className={Styles.MainProduct}>
+                <div className={Styles.RowAllProduk}>
                     <img src="/Assets/jam.png" />
-                    <div className={Styles.deskripsiProduk}>
+                    <div className={Styles.deskripsiAllProduk}>
                         <label>Jam Tangan Casio</label>
                         <p>Aksesoris</p>
                         <h4>Rp 250.000</h4>

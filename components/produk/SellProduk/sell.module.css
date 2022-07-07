@@ -1,5 +1,5 @@
 @media screen and (min-width:992px){
-    .MainCard{
+    .ContainerTerjual{
     /* position: absolute; */
     background-color: #27AE60;
     border: 1px solid #27AE60;
@@ -12,18 +12,18 @@
     padding: 20px 50px;
     }
 
-    .judulCard label{
+    .judulProdukTerjual label{
         padding: 10px;
         font-size: 25px;
         color: white;
     }
 
-    .CardProduct{
+    .CardProdukTerjual{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .MainProduct{
+    .RowTerjual{
         width: fit-content;
         height: fit-content;
         background: #FFFFFF;
@@ -34,23 +34,23 @@
         gap: 8px;
     }
 
-    .MainProduct img{
+    .RowTerjual img{
         width: 190px;
         height: 100px;
     }
 
     /* Awal Style Deskripsi Produk */
-    .deskripsiProduk{
+    .deskripsiProdukTerjual{
         padding-top: 10px;
     }
-    .deskripsiProduk label{
+    .deskripsiProdukTerjual label{
         font-size: 20px;
     }
-    .deskripsiProduk p{
+    .deskripsiProdukTerjual p{
         font-size: 14px;
         margin-top: 10px;
     }
-    .deskripsiProduk h4{
+    .deskripsiProdukTerjual h4{
         font-size: 16px;
         margin-top: 10px;
     }
@@ -58,7 +58,7 @@
 }
 
 @media screen and (max-width:428px){
-    .MainCard{
+    .ContainerTerjual{
     border-radius: 26px;
     -webkit-border-radius: 26px;
     -moz-border-radius: 26px;
@@ -66,18 +66,18 @@
     -o-border-radius: 26px;
     }
 
-    .judulCard{
+    .judulProdukTerjual{
         width: 100%;
         text-align: center;
         margin-bottom: 10px;
     }
-    .judulCard label{
+    .judulProdukTerjual label{
         padding: 10px;
         font-size: 35px;
         color: #27AE60;
     }
 
-    .CardProduct{
+    .CardProdukTerjual{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -87,7 +87,7 @@
         /* border: 5px solid yellow; */
     }
 
-    .MainProduct{
+    .RowTerjual{
         width: max-content;
         height: fit-content;
         background-color: #27AE60;
@@ -99,23 +99,23 @@
         text-align: center;
     }
 
-    .MainProduct img{
+    .RowTerjual img{
         width: 140px;
         height: 100px;
     }
 
     /* Awal Style Deskripsi Produk */
-    .deskripsiProduk{
+    .deskripsiProdukTerjual{
         padding-top: 10px;
     }
-    .deskripsiProduk label{
+    .deskripsiProdukTerjual label{
         font-size: 20px;
     }
-    .deskripsiProduk p{
+    .deskripsiProdukTerjual p{
         font-size: 10px;
         margin-top: 10px;
     }
-    .deskripsiProduk h4{
+    .deskripsiProdukTerjual h4{
         font-size: 14px;
         margin-top: 10px;
     }
