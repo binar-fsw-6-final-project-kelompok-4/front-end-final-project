@@ -6,7 +6,7 @@ const Profil = () => {
     return (
         <div className={Styles.containerProfil}>
 
-            <div className={Styles.dashboard}>
+            <div className={Styles.dashboardProfil}>
                 <Image src="/logo.jpg" width={350} height={350} />
             </div>
 
@@ -14,9 +14,9 @@ const Profil = () => {
                 <h3 className={Styles.text}>Profil Kamu</h3>
                 <hr className={Styles.garisHori} />
 
-                <div className={Styles.MainKonten}>
+                <div className={Styles.KontenProfil}>
 
-                    <div className={Styles.Main1}>
+                    <div className={Styles.RowProfil1}>
                         <div className={Styles.Konten1}>
                             <label>Username</label>
                             <p className={Styles.textKonten}>Dhaniel Yesyurun Bawias</p>
@@ -38,7 +38,7 @@ const Profil = () => {
                         <hr className={Styles.garisVerti} />
                     </div>
 
-                    <div className={Styles.Main2}>
+                    <div className={Styles.RowProfil2}>
                         <div className={Styles.Konten1}>
                             <label>No Hp</label>
                             <p className={Styles.textKonten}>0812345678</p>

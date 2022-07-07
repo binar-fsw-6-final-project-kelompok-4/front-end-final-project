@@ -10,7 +10,7 @@
         margin-left: 450px;
     }
 
-    .dashboard{
+    .dashboardProfil{
         position: relative;
         border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -22,7 +22,7 @@
         /* border: 1px solid green; */
     }
 
-    .dashboard img{
+    .dashboardProfil img{
         position: relative;
         border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -49,17 +49,17 @@
         margin-top: -10px;
     }
 
-    .MainKonten{
+    .KontenProfil{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .MainKonten label{
+    .KontenProfil label{
         color: #978f80;
         font-size: 14px;
     }
 
-    .Main2{
+    .RowProfil2{
         margin-left: -100px;
     }
 
@@ -87,16 +87,17 @@
 
     .garisHori{
         width: 100%;
-        background-color: black;
         height: 1px;
+        background-color: black;
     }
-    .garisVerti{
-        margin-top: -21px;
+    .garis .garisVerti{
         width:  1px;
         height: 100%;
+        margin-top: -15px;
+        margin-left: 130px;
         background-color: black;
     }
-    .MainKonten .Batas{
+    .KontenProfil .Batas{
         display: none;
     }
 }
@@ -109,7 +110,7 @@
         align-items: center;
         margin-top: 10px;
     }
-    .dashboard{
+    .dashboardProfil{
         position: relative;
         border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -120,7 +121,7 @@
         height: 150px;
         border: 1px solid green;
     }
-    .dashboard img{
+    .dashboardProfil img{
         position: relative;
         border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -131,7 +132,7 @@
         height: 150px;
         /* border: 1px solid yellow; */
     }
-    .MainKonten{
+    .KontenProfil{
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         border: 1px solid #ccc;
         padding: 25px;
@@ -141,7 +142,7 @@
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
     }
-    .MainKonten label{
+    .KontenProfil label{
         color: #978f80;
         font-size: 13px;
     }
@@ -158,7 +159,7 @@
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-}
+    }
     .garisHori, .garisVerti{
         display: none;
     }
