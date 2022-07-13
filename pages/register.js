@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Styles from "./register.module.css"
+import Styles from "../styles/register.module.css"
 import Link from "next/link"
 
 export default function register(){
@@ -11,14 +11,14 @@ export default function register(){
             </Head>   
                 <div className={Styles.card}>
                     <div className={Styles.judul}>
-                        <h1>SecondHand.</h1>
+                        <h1 className={Styles.judulwebsite}>SecondHand.</h1>
                     </div>
 
                     <div className={Styles.form}>
                         <form action="login.js">
                             <div className={Styles.box}>
                                 <div className={Styles.header}>
-                                    <h2 align="center">REGISTER</h2>
+                                    <h2 align="center" className={Styles.judulheader}>REGISTER</h2>
                                 </div>
 
                                 <div className={Styles.username} align="center">
@@ -42,8 +42,8 @@ export default function register(){
                                 </div>
                                 <br></br>
                                 <div className={Styles.button} align="center">
-                                    <input type="submit" className={Styles.button1} name="submit" value="Masuk"></input>
-                                </div>
+                                    <input type="submit" className={Styles.button1} name="submit" value="Daftar"></input>
+                                </div><br></br>
                                     
                                 <div className={Styles.page} align="center">
                                     <p>Sudah Memiliki Akun?</p>

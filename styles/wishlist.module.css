@@ -21,7 +21,7 @@
 }
 
 .datakonten{
-    margin-top: -30px;
+    margin-top: -10px;
 }
 
 .gambarnama{
@@ -58,12 +58,15 @@
 
 .namaproduct{
     padding-left: 10px;
+    padding-top: 10px;
 }
 
 .hargaproduct{
-    padding-left: 360px;
+    padding-left: 365px;
+    padding-top: 10px;
 }
 
 .statusproduct{
-    padding-left: 365px;
+    padding-left: 370px;
+    padding-top: 10px;
 }

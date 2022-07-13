@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "./halamanprodukseller.module.css"
+import styles from "../styles/halamanprodukseller.module.css"
 import Image from "next/image";
 
 export default function halamanseller(){

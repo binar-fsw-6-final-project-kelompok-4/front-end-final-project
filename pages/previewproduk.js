@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image"
-import styles from "./preview.module.css"
+import styles from "../styles/preview.module.css"
 
 export default function preview(){
     return(

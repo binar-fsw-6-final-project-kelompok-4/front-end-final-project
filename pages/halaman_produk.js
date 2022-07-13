@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
-import styles from "./halaman.module.css"
+import styles from "../styles/halaman.module.css"
 
 export default function product(){
     return(

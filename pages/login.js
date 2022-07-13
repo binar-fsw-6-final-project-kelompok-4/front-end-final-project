@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Styles from "./login.module.css"
+import Styles from "../styles/login.module.css"
 import Link from "next/link"
 
 export default function Login(){
@@ -11,14 +11,14 @@ export default function Login(){
             </Head>                    
                 <div className={Styles.card}>
                     <div className={Styles.judul}>
-                        <h1>SecondHand.</h1>
+                        <p className={Styles.judulwebsite}>SecondHand.</p>
                     </div>
 
                     <div className={Styles.form}>
                         <form action="/login" method="POST">
                             <div className={Styles.box}>
                                 <div className={Styles.header}>
-                                    <h2 align="center">LOGIN</h2>
+                                    <h2 align="center" className={Styles.headerjudulform}>LOGIN</h2>
                                 </div>
 
                                 <div className={Styles.email} align="center">

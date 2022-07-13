@@ -1,4 +1,4 @@
-import styles from "./wishlist.module.css"
+import styles from "../styles/wishlist.module.css"
 import Head from "next/head"
 import Image from "next/image"
 
@@ -6,10 +6,10 @@ export default function wishlist(){
     return(
         <div className={styles.container}>
             <Head>
-                <title>SeconHand. | Wishlist</title>
+                <title>SecondHand. | Wishlist</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-
+        
             <div className={styles.konten}>
                 <div className={styles.headerkonten}>
                     <Image src='/charity.png' width={150} height={150} alt=''></Image>

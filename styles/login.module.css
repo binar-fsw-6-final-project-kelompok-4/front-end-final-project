@@ -1,10 +1,12 @@
 .card{
-    display: grid;
-    grid-template-areas: 
-    'judul form';
+    display: flex;
+    flex-direction: row;
     background-image: url(/figma.jpg);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+    height: 761px;
+    width: 1000px;
+
+}
   .form_control{
       border-radius: 52px;
       box-sizing : border-box;
@@ -12,9 +14,11 @@
       padding: 10px;
       font-size: 9pt;
     }
+
   .box{
       width: 400px;
-      padding: 20px 30px 25px 30px;
+      padding: 15px 30px 78px 30px;
+      border-radius: 10px;
     }
   .form_label{
       font-size: 19px;
@@ -25,42 +29,38 @@
   .judul{
       padding-left: 100px;
       padding-top: 25%;
-      font-size: 60px;
+      font-size: 500px;
       font-style: italic;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       color: white;
 
   }
-  .header{
+  .headerjudulform{
       color: black;
-      font-size: 30px;
+      height: 90px;
+      font-size: 50px;
   }
   .form{
-      padding-right: 18px;
-      padding-top: 19%;
-      padding-right: 50px;
       background-color: white;
-      padding-left: 120px;
-      padding-bottom: 19.5%;
+      margin-left: 26%;
+      margin-top: 17%;
+      width: 100%;
       
   }
   .boxform{
       padding-top: 10%;
   }
-  .h1{
-    padding-top: 33%;
+  .judulwebsite{
+    padding-top: 5%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 130px;
     color: white;
-    font-size: 135px;
-  } 
-
+  }
 
   .link{
     color: blue;
-    padding-top: -30px;
   }
-
-
+  
   .button1{
     border-radius: 10px;
     border-color: white;
@@ -70,4 +70,7 @@
     font-size: 15px;
     color: white;
   }
-  
+
+  .page{
+    padding-top: 10px;
+  }
