@@ -1,87 +1,65 @@
-import {Button} from "react-bootstrap";
-import {Image} from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { Container, Button, Row, Col, Card } from "react-bootstrap";
+import { FiSearch } from "react-icons/fi";
+import axios from "axios";
 
-import { getInitialData } from "../../data/data.js";
+import Link from 'next/link';
 
-export default function Product(params) {
+function Product() {
+
+    const [post, setPost] = useState([]);
+    const [category, setCategory] = useState([""]);
+
+    const categories = category ? `&category=${category}` : "";
+
+    useEffect(() => {
+        const postData = async () => {
+            const response = await axios.get(`https://fsw6-group4-staging.herokuapp.com/api/v1/listproduct`);
+            console.log(response);
+            const data = await response.data.data;
+            console.log(data);
+
+            setPost(data);
+        };
+        postData();
+    }, [categories]);
+
     return (
-        <>
-            <section className="container section-product mt-2 mb-5" id="btn-category">
-                <div className="filter mb-5" >
-                    <h3>Kategori</h3>
-                    <div className="justify-content-start my-2">
-                        <Button
-                            className="me-4 border-0 hi active btn-shadow"
-                            type="link"
-                            src=""
-                            onClick={() => params.setProduct(getInitialData())}
-                        ><div>
-                                <Image
-                                    src="images/fi_search.png"
-                                    alt="Foto"
-                                    className="img-fluid"
-                                />
-                            Semua
-                        </div>
-                        </Button>
-
-                        {params.menuItems.map((kategori) => {
-                            return (
-                                <Button className="me-4 hi btn-shadow border-0"
-                                    type="link"
-                                    onClick={() => params.filterItem(kategori)}
-                                    key={params.id}
-                                ><div>
-                                        <Image
-                                            src="images/fi_search_black.png"
-                                            alt="Foto"
-                                            className="img-fluid "
-                                        />
-                                        {kategori}
-                                    </div>
-                                </Button>
-                            );
-                        })}
-                    </div>
-                </div>
-
-                <div className="product" >
-                    <div className="row justify-content-center">
-                        {params.data.length === 0 ? (
-                            <div className="d-flex justify-content-center null-illustration p-5">
-                                <div>
-                                    <Image src="images/ilustrasi.svg" alt="" className="img-fluid mb-3" />
-                                    <p>Produk tidak ditemukan</p>
-                                </div>
+        <Container className="pt-5" id="btn-category">
+            <h5 className="fw-bold">Telusuri Kategori</h5>
+            <div className="button-group">
+                <Button onClick={() => setCategory(null)} className="me-4 radius-secondary bg-color-secondary border-0">
+                    <FiSearch className="me-1 mb-1" />
+					Semua
+				</Button>
+                {/* {/* {category.map((c) =>  */}
+                <Button onClick={() => setCategory("makanan")} className="me-4 radius-secondary bg-color-secondary border-0">
+                    <FiSearch className="me-1 mb-1" /> Makanan
+				</Button>
+                <Button onClick={() => setCategory("camera")} className="me-4 radius-secondary bg-color-secondary border-0">
+                    <FiSearch className="me-1 mb-1" /> Camera
+				</Button>
+            </div>
+            <Container id="products" className="mt-5">
+                <Row md={6}>
+                    {post.map((post) =>
+                        <Col md={2} key={post.id} className="mb-3 p-2" >
+                            <div className="text-decoration-none text-black">
+                                <Card >
+                                    <Card.Img variant="top" className="p-2" src={post.image} style={{ maxHeight: "100px", objectFit: "cover" }} />
+                                    <Card.Body>
+                                        <Card.Title className="fs-7 ">{post.product_name}</Card.Title>
+                                        <p className="text-black-50 fs-8  mb-0">{post.category}</p>
+                                        <Card.Text className="fs-7 ">{(post.price)}</Card.Text>
+                                    </Card.Body>
+                                </Card>
                             </div>
-                        ) : (
-                            params.data.map((item) => {
-                                return (
-                                    <Button
-                                        type="link"
-                                        href={`/product/${item.id}`}
-                                        className="col-lg-3 col-md-6 col-sm-12 r"
-                                        key={item.id}
-                                    >
-                                        <div className="card-product p-3 mb-4">
-                                            <Image
-                                                src={item.image}
-                                                alt="Foto"
-                                                className="img-fluid mb-3"
-                                            />
-                                            <div className="product-name">
-                                                <h3>{item.name.substring(0, 50)}</h3>
-                                            </div>
-                                            <p>{item.category}</p>
-                                            <h4>Rp. {item.price}</h4>
-                                        </div>
-                                    </Button>
-                                );
-                            })
-                        )}
-                    </div>
-                </div>
-            </section>
-        </>
+                        </Col>
+                    ).reverse()}
+                </Row>
+            </Container>
+        </Container>
     );
 }
+
+export default Product;

@@ -29,13 +29,13 @@ export default function App() {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper mt-5 mb-5"
             >
-                <SwiperSlide className="swiper-slide">
+                <SwiperSlide>
                     <Image src="images/imgBanner.png" alt="imageBanner" />
                 </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
+                <SwiperSlide>
                     <Image src="images/imgBanner-2.jpg" alt="imageBanner" />
                 </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
+                <SwiperSlide>
                     <Image src="images/imgBanner-3.jpg" alt="imageBanner" />
                 </SwiperSlide>
             </Swiper>
