@@ -347,8 +347,7 @@ code {
     box-shadow: 0px 8px 15px rgba(24, 66, 145, 0.3);
 }
 
-#btn-category .active,
-Button:hover {
+#btn-category Button:hover >.active{
     background-color: #7126B5 !important;
     color: #fff;
     border-color: #610877;
