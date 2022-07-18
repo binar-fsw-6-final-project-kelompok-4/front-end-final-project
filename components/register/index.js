@@ -15,14 +15,25 @@ export default function register(){
         password : data.password,
         username : data.username
     })
-    toast.success("Regsiter Berhasil", {
-        duration: 4000,
-        position: 'top-center',
+    .then((suc)=>{
+        toast.success("Regsiter Berhasil", {
+            duration: 4000,
+            position: 'top-center',
+        })
+        window.setTimeout(function(){
+            window.location.href = "/login";
+        }, 2000);
+        console.log(data);
     })
-    window.setTimeout(function(){
-        window.location.href = "/login";
-    }, 2000);
-    console.log(data);
+
+    .catch ((err)=>{
+        toast.error("Regsiter Gagal", {
+            duration: 4000,
+            position: 'top-center',
+        })
+    }
+    ) 
+
   }
 
 

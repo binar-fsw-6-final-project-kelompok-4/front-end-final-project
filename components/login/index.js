@@ -1,21 +1,63 @@
 import Head from "next/head"
 import Styles from "./login.module.css"
 import Link from "next/link"
+import {useForm} from "react-hook-form"
+import toast, { Toaster } from "react-hot-toast"
+import axios from "axios"
 
-export default function Login(){
+export default function Login() {
+    const {
+        register,
+        handleSubmit
+    } = useForm();
+    const onSubmit = async (data) => {
+        axios.post("https://fsw6-group4-staging.herokuapp.com/api/v1/users/login", {
+            email :data.email,
+            password : data.password,
+            })
+            .then((val) => {
+                toast.success("Login Success", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+                window.localStorage.setItem("token", val.data.data.token);
+                window.setTimeout(function(){
+                    window.location.href = "/";
+                },2000 );
+                // window.location.href = "/";
+            })
+            .catch((err) => {
+                console.log("gagal");
+                toast.error("Invalid Email or Password", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            });
+    }
     return(
         <div className={Styles.container}>
             <Head>
                 <title>SecondHand. | Login</title>
                 <link rel="icon" href="/favicon.ico" />
-            </Head>                    
+            </Head>      
+            <Toaster/>          
                 <div className={Styles.card}>
                     <div className={Styles.judul}>
                         <h1>SecondHand.</h1>
                     </div>
 
                     <div className={Styles.form}>
-                        <form action="/login" method="POST">
+                        <form action="/login" onSubmit={handleSubmit(onSubmit)} method="POST">
                             <div className={Styles.box}>
                                 <div className={Styles.header}>
                                     <Link href="/login">
@@ -25,7 +67,7 @@ export default function Login(){
 
                                 <div className={Styles.email} align="center">
                                     <label for="Email" className={Styles.form_label}>E-mail</label><br></br>
-                                    <input type="text" className={Styles.form_control} name="Email" id="Email" placeholder="Masukkan Email Anda" required></input>
+                                    <input type="text" className={Styles.form_control} name="Email" id="Email" placeholder="Masukkan Email Anda" {...register("email")} required></input>
                                 </div>
 
                                 <br>
@@ -33,7 +75,7 @@ export default function Login(){
 
                                 <div className={Styles.password} align="center">
                                     <label for="password" className={Styles.form_label}>Password</label><br></br>
-                                    <input type="password" className={Styles.form_control} name="password" id="password" placeholder="Masukkan Password Anda" required></input>
+                                    <input type="password" className={Styles.form_control} name="password" id="password" placeholder="Masukkan Password Anda" {...register("password")} required></input>
                                 </div>
                                 <br></br>
                                 <div className={Styles.button} align="center">
