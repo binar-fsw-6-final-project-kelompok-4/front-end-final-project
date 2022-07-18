@@ -2,7 +2,6 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     margin-top: 20px;
-    width: 100%;
     /* border: 5px solid red; */
 }
 @media screen and (min-width: 992px) {
@@ -40,19 +39,35 @@
         height: 40px;
         justify-content: space-between;
         align-items: center;
-        padding-top: 20px;
         background-color: transparent;
+        margin-top: 20px;
         border: none;
         cursor: pointer;
     }
     .TambahProduct span{
         font-size: 16px;
+        color: black;
+    }
+    .TambahProduct button:hover{
+        border-radius: 10px;
+        background-color: black;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .TambahProduct button:hover > span{
+        color: white;
+    }
+    .TambahProduct button:hover > .Add{
+        filter: brightness(0) invert(1);
+        -webkit-filter: brightness(0) invert(1);
+    }
+    .TambahProduct button:hover > .arrowProduk{
+        filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(304deg) brightness(113%) contrast(100%);
+        -webkit-filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(304deg) brightness(113%) contrast(100%);
     }
 
-    .AllProduk span{
-        font-size: 16px;
-        color: #7126B5;
-    }
     .AllProduk button{
         width: 100%;
         margin-top: 20px;
@@ -63,6 +78,10 @@
         cursor: pointer;
         background-color: white;
         border: none;
+    }
+    .AllProduk span{
+        font-size: 16px;
+        color: #7126B5;
     }
     .AllProduk button:hover{
         border-radius: 10px;
@@ -256,17 +275,26 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 150px;
+        width: 200px;
         height: 40px;
         background-color: transparent;
-        border: 1px solid black;
+        background-color: black;
+        border: 1px solid white;
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
     }
+    .TambahProduct span{
+        color: white;
+    }
+    .TambahProduct button > .Add{
+        filter: brightness(0) invert(1);
+        -webkit-filter: brightness(0) invert(1);
+    }
 
+    
     .AllProduk{
         margin-right: 20px;
     }

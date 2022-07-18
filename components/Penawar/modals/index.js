@@ -7,6 +7,7 @@ export default function Modals({CloseModal}) {
             <div className={Styles.ModalBody}>
                 <div className={Styles.CloseModal}>
                     <button onClick={() => CloseModal(false)}>
+                        <div className={Styles.ModalClose}></div>
                         <img src="/Assets/x.svg" />
                     </button>
                 </div>
@@ -17,7 +18,7 @@ export default function Modals({CloseModal}) {
                 <div className={Styles.ModalKonten}>
                     <h2>Product Match</h2>
                     <div className={Styles.ModalUser}>
-                        <img src="/Assets/jam.png" />
+                        <img src="/logo.jpg" />
                         <div className={Styles.TextModalUser}>
                             <label>Nama Pembeli</label>
                             <p>Kota</p>
@@ -26,9 +27,9 @@ export default function Modals({CloseModal}) {
                     <div className={Styles.ModalProduk}>
                         <img src="/Assets/jam.png" />
                         <div className={Styles.TextModalProduk}>
-                            <p>Produk : Jam Tangan Casio</p>
-                            <p>Harga : Rp 250.000</p>
-                            <p>Ditawar : Rp 200.000</p>
+                            <label>Produk : Jam Tangan Casio</label>
+                            <label>Harga : Rp 250.000</label>
+                            <label>Ditawar : Rp 200.000</label>
                         </div>
                     </div>
                 </div>
