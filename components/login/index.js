@@ -10,10 +10,10 @@ export default function Login() {
         register,
         handleSubmit
     } = useForm();
-    const onSubmit = async (data) => {
-        axios.post("https://fsw6-group4-staging.herokuapp.com/api/v1/users/login", {
-            email :data.email,
-            password : data.password,
+    const onSubmit = async (val) => {
+        axios.post("http://localhost:8000/api/v1/users/login", {
+            email :val.email,
+            password : val.password,
             })
             .then((val) => {
                 toast.success("Login Success", {

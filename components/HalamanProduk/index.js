@@ -1,8 +1,33 @@
 import Head from "next/head"
 import Image from "next/image"
 import styles from "./halaman.module.css"
+import axios from "axios"
+import { useRouter } from 'next/router'
 
 export default function Product(){
+    const {query} = useRouter()
+    const id = query.id
+    //http://localhost:3000/produk/halamanproduk?id=1 link
+    axios.get(`http://localhost:8000/api/v1/products/${id}`)
+    .then((dataP)=>{
+        console.log(dataP);
+    const productName = dataP.data.data.product_name
+    const price = dataP.data.data.price
+    const description = dataP.data.data.description
+    const address = dataP.data.data.user.address
+    const username = dataP.data.data.user.username
+    const category = dataP.data.data.category
+
+    document.getElementById("productName").innerHTML = productName;
+    document.getElementById("address").innerHTML = address;
+    document.getElementById("price").innerHTML = price;
+    document.getElementById("description").innerHTML = description;
+    document.getElementById("username").innerHTML = username;
+    document.getElementById("category").innerHTML = category;
+    })
+
+
+
     return(
         <div className={styles.container}>
             <Head>
@@ -45,16 +70,16 @@ export default function Product(){
                         
                         <div className={styles.deskripsi}>
                             <p className={styles.juduldeskripsi}>DESKRIPSI</p>
-                            <p className={styles.detaildeskripsi}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p className={styles.detaildeskripsi} id="description"></p>
                         </div>
                 </div>
             </div>
             <div className={styles.row2}>
                     <div className={styles.detail}>
                         <div className={styles.detailproduct}>
-                            <p className={styles.judulproduct}>Jam Tangan Casio</p>
-                            <p className={styles.kategoriproduct}>Aksesoris</p>
-                            <p className={styles.hargaproduct}>Rp. 250.000</p>
+                            <p className={styles.judulproduct} id="productName" ></p>
+                            <p className={styles.kategoriproduct} id="category"></p>
+                            <p className={styles.hargaproduct}>Rp. <span id="price"></span> </p>
                         </div>
                         <button className={styles.btn}>Nego barang</button>
                     </div>
@@ -63,8 +88,8 @@ export default function Product(){
                             <Image src="/figma.jpg" width={70} height={50} alt='Profil Penjual'></Image>
                         </div>
                         <div className={styles.detailseller}>
-                            <p className={styles.namaseller}>Nama Penjual</p>
-                            <p className={styles.kotaseller}>Kota</p>
+                            <p className={styles.namaseller} id="username"></p>
+                            <p className={styles.kotaseller} id="address"></p>
                         </div>
                     </div>
                     <div className={styles.productlain}>
