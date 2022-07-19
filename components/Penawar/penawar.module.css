@@ -1,0 +1,175 @@
+/* width */
+.InfoPenawar::-webkit-scrollbar {
+    width: 10px;
+}
+.ContainerPenawar{
+    
+    height: max-content;
+    position: relative;
+    font-family: 'poppins', sans-serif;
+}
+
+.JudulPenawrProduct{
+    text-align: center;
+}
+
+.BodyPenawar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: blue; */
+    margin-top: 30px;
+}
+
+.InfoUser{
+    margin-left: 50px;
+    height: 80vh;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.RowUser{
+    display: flex;
+    width: 300px;
+    height: fit-content;
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #E3E3E3;
+    background-color: #E3E3E3;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.ImgUser{
+    position: relative;
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 70px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.textUser{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.ImgAdd{
+    width: 15px;
+    margin-left: 50px;
+    position: relative;
+}
+/* Akhir User Penawar */
+
+/* Awal Produk Penawar */
+.InfoPenawar{
+    width: 850px;
+    height: 80vh;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-right: 40px;
+    background-color: #ccc;
+    /*border: 1px solid green;
+    */border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.judulInfoProduk{
+    text-align: center;
+    font-size: 24px;
+}
+
+.RowPenawar{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.RowPenawar img{
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.DetailProduk{
+    width: fit-content;
+    height: fit-content;
+    /* border: 1px solid green; */
+    font-size: 12px;
+    padding-top: 5px;
+}
+.DetailProduk h4{
+    color: red;
+}
+
+.ActionButton{
+    /* border: 1px solid green; */
+    /* margin-top: 10px; */
+    margin-top: 10px;
+    margin-left: 130px;
+    position: relative;
+}
+.ActionButton label{
+    margin-left: 300px;
+}
+.BtnPenawar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    /* margin-left: 20px; */
+    /* padding: 20px; */
+}
+.BtnCancle{
+    background-color: #DB0000;
+    border: 1px solid #DB0000;
+    color: white;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.BtnAccept{
+    background-color: #26B54E;
+    border: 1px solid #26B54E;
+    margin-left: 20px;
+    color: white;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* Akhir Produk Penawar */
+

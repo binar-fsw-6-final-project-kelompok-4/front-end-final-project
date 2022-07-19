@@ -9,8 +9,7 @@ import FloatingButton from "../components/buttonJual/floatingButton";
 
 
 export default function Home() {
-
-
+    
     return (
         <>
             <Navbar></Navbar>

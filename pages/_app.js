@@ -1,14 +1,13 @@
 import '../styles/style.css';
 import "../styles/floatingButton.css"
 
+import "../styles/detailProduct.css";
 
 // carousel
 import '../styles/carouselV2.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import "../styles/products.css"
 
 // boostrap
 import "bootstrap/dist/css/bootstrap.min.css";
