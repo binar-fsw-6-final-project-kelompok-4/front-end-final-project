@@ -10,7 +10,7 @@ import toast, {Toaster} from "react-hot-toast"
 export default function register(){
   const {register, handleSubmit} = useForm()
   const onSubmit = (data) =>{
-    axios.post("https://localhost:8000/api/v1/users/add",{
+    axios.post("http://localhost:8000/api/v1/users/add",{
         email :data.email,
         password : data.password,
         username : data.username
