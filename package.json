@@ -4,14 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "CI= npm run build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "antd": "^4.21.3",
     "axios": "^0.27.2",
+<<<<<<< HEAD
     "babel": "^6.23.0",
+=======
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
     "bootstrap": "^5.1.3",
     "next": "12.1.6",
     "owl.carousel": "^2.3.4",
@@ -29,7 +32,10 @@
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "autoprefixer": "^10.4.7",
+<<<<<<< HEAD
     "eslint": "^8.18.0",
+=======
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
     "eslint-config-google": "^0.14.0",
     "eslint-config-next": "12.1.6",
     "eslint-plugin-react": "^7.30.0",

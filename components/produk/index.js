@@ -25,8 +25,13 @@ export default function Produk() {
 
                     <div className={Styles.TambahProduct}>
                         <Link href="/produk/tambahproduk">
+<<<<<<< HEAD
                             <button>
                             <img src="/Assets/add.png" />
+=======
+                        <button>
+                            <img className={Styles.Add} src="/Assets/add.png" />
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
                             <span>Tambah Produk</span>
                             <img className={Styles.arrowProduk} src="/Assets/add.svg" />
                         </button>
