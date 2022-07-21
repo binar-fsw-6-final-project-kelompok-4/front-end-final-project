@@ -3,13 +3,6 @@ import {Image}  from "react-bootstrap";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-
-// import "../../assets/css/carouselV2.css"
-
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
@@ -20,7 +13,7 @@ export default function App() {
                 spaceBetween={0}
                 loop={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 4000,
                     disableOnInteraction: false,
                 }}
                 centeredSlides={true}

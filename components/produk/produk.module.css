@@ -2,6 +2,10 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     margin-top: 20px;
+<<<<<<< HEAD
+    width: 100%;
+=======
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
     /* border: 5px solid red; */
 }
 @media screen and (min-width: 992px) {
@@ -39,13 +43,26 @@
         height: 40px;
         justify-content: space-between;
         align-items: center;
+<<<<<<< HEAD
+        padding-top: 20px;
+        background-color: transparent;
+=======
         background-color: transparent;
         margin-top: 20px;
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
         border: none;
         cursor: pointer;
     }
     .TambahProduct span{
         font-size: 16px;
+<<<<<<< HEAD
+    }
+
+    .AllProduk span{
+        font-size: 16px;
+        color: #7126B5;
+    }
+=======
         color: black;
     }
     .TambahProduct button:hover{
@@ -68,6 +85,7 @@
         -webkit-filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(304deg) brightness(113%) contrast(100%);
     }
 
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
     .AllProduk button{
         width: 100%;
         margin-top: 20px;
@@ -79,10 +97,13 @@
         background-color: white;
         border: none;
     }
+<<<<<<< HEAD
+=======
     .AllProduk span{
         font-size: 16px;
         color: #7126B5;
     }
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
     .AllProduk button:hover{
         border-radius: 10px;
         background-color: #7126B5;
@@ -275,17 +296,27 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+<<<<<<< HEAD
+        width: 150px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid black;
+=======
         width: 200px;
         height: 40px;
         background-color: transparent;
         background-color: black;
         border: 1px solid white;
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
     }
+<<<<<<< HEAD
+
+=======
     .TambahProduct span{
         color: white;
     }
@@ -295,6 +326,7 @@
     }
 
     
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
     .AllProduk{
         margin-right: 20px;
     }

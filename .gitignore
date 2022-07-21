@@ -8,21 +8,21 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
 # production
 /build
 
 # misc
 .DS_Store
-*.pem
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
+=======
 .pnpm-debug.log*
 
 # local env files
@@ -31,3 +31,4 @@ yarn-error.log*
 # vercel
 .vercel
 
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13

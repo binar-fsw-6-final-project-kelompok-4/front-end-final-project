@@ -14,3 +14,77 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.Custom404 {
+  margin: 0;
+  padding-top: 200px;
+  font-family: "montserrat", sans-serif;
+  min-height: 100vh;
+  background-color: rgb(88, 4, 4);
+}
+
+.Custom404 .eror {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #000000;
+}
+
+.not-found1 {
+  margin: 10px 0 30px 0;
+  text-align: center;
+  color: white;
+}
+
+.not-found2 {
+  margin: 0;
+  text-align: center;
+  font-size: 150px;
+  font-weight: 900;
+  letter-spacing: 20px;
+  background: url(../public/images/login2.png);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.not-found3 {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}
+
+/* about */
+.about {
+  margin: 0;
+  padding-top: 200px;
+  font-family: "montserrat", sans-serif;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.about h2 {
+  text-align: center;
+  color: white;
+}
+
+.about .parag {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #000000;
+}
+
+
+
+.not-found1  {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}

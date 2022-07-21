@@ -1,5 +1,26 @@
 import Head from "next/head"
 import Image from "next/image"
+<<<<<<< HEAD
+import styles from "./halaman.module.css";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+export default function Product(){
+
+    const [post, setPost] = useState([]);
+
+    useEffect(() => {
+        const postData = async () => {
+            const response = await axios.get(`https://fsw6-group4-staging.herokuapp.com/api/v1/listproduct`);
+            console.log(response);
+            const data = await response.data.data;
+            console.log(data);
+
+            setPost(data);
+        };
+        postData();
+    }, []);
+=======
 import styles from "./halaman.module.css"
 import axios from "axios"
 import { useRouter } from 'next/router'
@@ -26,6 +47,7 @@ export default function Product(){
     document.getElementById("category").innerHTML = category;
     })
 
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
 
 
     return(
@@ -70,6 +92,36 @@ export default function Product(){
                         
                         <div className={styles.deskripsi}>
                             <p className={styles.juduldeskripsi}>DESKRIPSI</p>
+<<<<<<< HEAD
+                            <p className={styles.detaildeskripsi}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                </div>
+            </div>
+            
+            <div className={styles.row2}>
+                
+                    <div className={styles.detail}>
+                        <div className={styles.detailproduct}>
+                            <p className={styles.judulproduct}>Jam Tangan Casio</p>
+                            <p className={styles.kategoriproduct}>Aksesoris</p>
+                            <p className={styles.hargaproduct}>Rp. 250.000</p>
+                        </div>
+                        <button className={styles.btn}>Nego barang</button>
+                    </div>
+
+                    {post.map((post) =>
+                        <div className={styles.seller}>
+                            <div className={styles.gambarseller}>
+                                <Image src="/figma.jpg" width={70} height={50} alt='Profil Penjual'></Image>
+                            </div>
+                            <div className={styles.detailseller}>
+                                <p className={styles.namaseller}>{post.seller_id}</p>
+                                <p className={styles.kotaseller}>Kota</p>
+                            </div>
+                        </div>
+                    )}
+
+=======
                             <p className={styles.detaildeskripsi} id="description"></p>
                         </div>
                 </div>
@@ -92,6 +144,7 @@ export default function Product(){
                             <p className={styles.kotaseller} id="address"></p>
                         </div>
                     </div>
+>>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
                     <div className={styles.productlain}>
                         <p className={styles.judulkonten}>Product Sejenis</p>
                         <div className={styles.konten}>
