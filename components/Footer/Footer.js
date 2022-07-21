@@ -1,4 +1,4 @@
-import Button from "../../styles/button.js";
+import Link from "next/link";
 import BrandIcon from "../Logo/TextSecondHand";
 
 export default function Footer() {
@@ -10,19 +10,19 @@ export default function Footer() {
                         <h6 className="mt-2">Beginners</h6>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item">
-                                <Button isExternal type="link" href="/register">
+                                <Link isExternal type="link" href="/register">
                                     Create Account
-                                </Button>
+                                </Link>
                             </li>
                             <li className="list-group-item">
-                                <Button isExternal type="link" href="/properties">
+                                <Link isExternal type="link" href="/properties">
                                     Start Buy
-                                </Button>
+                                </Link>
                             </li>
                             <li className="list-group-item">
-                                <Button isExternal type="link" href="/use-payments">
+                                <Link isExternal type="link" href="/use-payments">
                                     Use Payments
-                                </Button>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -31,22 +31,22 @@ export default function Footer() {
                         <h6 className="mt-2">Explore Us</h6>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item">
-                                <Button isExternal type="link" href="/careers">
-                                    Our Careers
-                                </Button>
+                                <Link isExternal type="link" href="/about">
+                                    Our Team
+                                </Link>
                             </li>
                             <li className="list-group-item">
-                                <Button isExternal type="link" href="/privacy">
+                                <Link isExternal type="link" href="/privacy">
                                     Privacy
-                                </Button>
+                                </Link>
                             </li>
                             <li className="list-group-item">
-                                <Button
+                                <Link
                                     isExternal
                                     type="link"
                                     href="/terms">
                                     Terms & Conditions
-                                </Button>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -55,18 +55,18 @@ export default function Footer() {
                         <h6 className="mt-2">Connect Us</h6>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item">
-                                <Button
+                                <Link
                                     isExternal
                                     type="link"
                                     href="mailto:fsw6@kelompok4.com"
                                 >
                                     fsw6@kelompok4.com
-                                </Button>
+                                </Link>
                             </li>
                             <li className="list-group-item">
-                                <Button isExternal type="link" href="tel:+622122081996">
+                                <Link isExternal type="link" href="tel:+622122081996">
                                     085 - 1122 - 3344
-                                </Button>
+                                </Link>
                             </li>
                             <li className="list-group-item">
                                 <span>Kelompok 4, Binar</span>
@@ -74,8 +74,8 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    <div className="col-3">
-                        <div href="#" className="foter brand bg-color-primary"></div>
+                    <div className="col-3" id="#brand">
+                        <div href="#" className="brand bg-color-primary"></div>
                         <div className="fot"> <BrandIcon /> </div>
                         <p className="brand-tagline">FSW 6 : Kelompok 4</p>
                     </div>
