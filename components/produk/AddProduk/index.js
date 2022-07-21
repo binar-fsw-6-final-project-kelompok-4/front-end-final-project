@@ -1,10 +1,6 @@
 import Head from "next/head";
 import styles from "./tambahproduk.module.css";
 import Link from "next/link";
-<<<<<<< HEAD
-
-export default function Tambahproduk(){
-=======
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
@@ -20,7 +16,6 @@ export default function Tambahproduk(){
       })
       console.log(data);
     }
->>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
     return(
         <div className={styles.container}>
             <Head>
@@ -31,35 +26,20 @@ export default function Tambahproduk(){
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
             </Head>
                 <div className={styles.konten}>
-<<<<<<< HEAD
-                    <form action="/previewproduk" method="POST">
-                        <div className={styles.namaproduct}>
-                            <label for='namaproduk' className={styles.labelproduct}>Nama Produk</label>
-                            <input type='text' className={styles.inputkonten} name="Nama" id="namaproduk" placeholder="Nama Produk" required></input>
-=======
                     <form action="/previewproduk" method="POST" onSubmit={handleSubmit(onSubmit)}>
                         <div className={styles.namaproduct}>
                             <label for='namaproduk' className={styles.labelproduct}>Nama Produk</label>
                             <input type='text' className={styles.inputkonten} name="Nama" id="namaproduk" placeholder="Nama Produk" {...register("product_name")}required></input>
->>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
                         </div>
 
                         <div className={styles.hargaproduct}>
                             <label for='hargaproduk' className={styles.labelproduct}>Harga Produk</label>
-<<<<<<< HEAD
-                            <input type='text' className={styles.inputkonten} name="Harga" id="hargaproduk" placeholder="Rp. 0.00" required></input>
-=======
                             <input type='text' className={styles.inputkonten} name="Harga" id="hargaproduk" placeholder="Rp. 0.00" {...register("price")}required></input>
->>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
                         </div>
 
                         <div className={styles.kategoriproduct}>
                                 <label for="kategori">Kategori</label>
-<<<<<<< HEAD
-                                    <select name="kategori" id="kategori" className={styles.inputkonten}    >
-=======
                                     <select name="kategori" id="kategori" className={styles.inputkonten}   {...register("category")} >
->>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
                                         <option value=""></option>
                                         <option value="Hobi">Hobi</option>
                                         <option value="Kendaraan">Kendaraan</option>
@@ -70,20 +50,12 @@ export default function Tambahproduk(){
 
                         <div className={styles.deskripsiproduct}>
                             <label for='Deskripsiproduk' className={styles.labelproduct}>Deskripsi Produk</label>
-<<<<<<< HEAD
-                            <input type='text' className={styles.inputkonten} name="Deskripsi" id="Deskripsiproduk" placeholder="Contoh : ..." required></input>
-=======
                             <input type='text' className={styles.inputkonten} name="Deskripsi" id="Deskripsiproduk" placeholder="Contoh : ..." {...register("description")}required></input>
->>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
                         </div>
 
                         <div className={styles.fotoproduct}>
                                 <label for='fotoproduk' className={styles.labelproductgambar}>Foto Produk</label>
-<<<<<<< HEAD
-                                <input type='file' className={styles.inputkontenfile} name="foto" id="fotoproduk" required></input>
-=======
                                 <input type='file' className={styles.inputkontenfile} name="foto" id="fotoproduk" {...register("product_img1")}required></input>
->>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
                         </div>
 
                         <div className={styles.buttonproduct}>

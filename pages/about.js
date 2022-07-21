@@ -1,6 +1,5 @@
 export default function about(){
     return(
-<<<<<<< HEAD
         <div className="about">
         <h2>Kelompok 4 : FSW 6 : Binar Academy</h2>
           <div className="parag">
@@ -14,8 +13,5 @@ export default function about(){
                 <p className="not-found3">3. Dhewan Agum Mahendra</p>
           </div>
         </div>
-=======
-        <h1>Selamat Datang</h1>
->>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
     )
 }
