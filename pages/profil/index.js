@@ -1,11 +1,11 @@
-import Navbar from "../../components/Navbar/Navbar";
+import { NavBeforeLogin } from "../../components/Navbar/Navbar";
 import Profil from "../../components/profil"
 import Footer from "../../components/Footer/Footer";
 
 export default function profil() {
     return (
         <div>
-            <Navbar />
+            <NavBeforeLogin />
             <Profil />
             <Footer />
         </div>
