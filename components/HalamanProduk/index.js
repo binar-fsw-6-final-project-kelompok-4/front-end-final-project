@@ -7,8 +7,8 @@ import { useRouter } from 'next/router'
 export default function Product(){
     const {query} = useRouter()
     const id = query.id
-    //http://localhost:3000/produk/halamanproduk?id=1 link
-    axios.get(`http://localhost:8000/api/v1/products/${id}`)
+    //https://fsw6-group4-staging.herokuapp.com/halamanproduk?id=1 link
+    axios.get(`https://fsw6-group4-staging.herokuapp.com/api/v1/products/${id}`)
     .then((dataP)=>{
         console.log(dataP);
     const productName = dataP.data.data.product_name
