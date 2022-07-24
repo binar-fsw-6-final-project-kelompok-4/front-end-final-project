@@ -14,6 +14,7 @@ const DetailProduct = () => {
     const [product, setProduct] = useState([])
     const [user, setUser] = useState([]);
     const [userImage, setUserImage] = useState([]);
+
     const [images, setImages] = useState([])
     const [popProductImage, setPopProductImage] = useState([])
     const router = useRouter()
@@ -81,8 +82,8 @@ const DetailProduct = () => {
                     <img src={userImage} alt='profileImage'/>
                     
                     <div className={style.sellerInfo}>
-                        <h1>Nama : {user.name}</h1>
-                        <h4>Kota : {user.city}</h4>
+                        <h1>Nama : </h1>
+                        <h4>Kota : </h4>
                     </div>
                 </div>
             </div>

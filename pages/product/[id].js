@@ -12,8 +12,9 @@ import axios from "axios"
 
 const DetailProduct = () => {
     const [product, setProduct] = useState([])
-    const [user, setUser] = useState([]);
-    const [userImage, setUserImage] = useState([]);
+    // const [user, setUser] = useState("");
+    // const [userImage, setUserImage] = useState("");
+
     const [images, setImages] = useState([])
     const [popProductImage, setPopProductImage] = useState([])
     const router = useRouter()
@@ -27,9 +28,11 @@ const DetailProduct = () => {
         try {
             const response = await axios.get(`https://fsw6-group4-staging.herokuapp.com/api/v1/products/info/${router.query.id}`)
             setProduct(response.data.data[0])
-            setUser(response.data.data[0].users);
-            setUserImage(response.data.data[0].users.profile_img);
-            console.log('user produk ini : ', response.data.data[0].users)
+
+            // setUser(response.data.data[0].users);
+            // setUserImage(response.data.data[0].users.profile_img);
+            // console.log('user produk ini : ', response.data.data[0].users)
+
             setImages(response.data.data[0].images)
             setPopProductImage(response.data.data[0].images[0].img)
         }
@@ -78,11 +81,11 @@ const DetailProduct = () => {
                 </div>
                 
                 <div className={style.bottom}>
-                    <img src={userImage} alt='profileImage'/>
+                    <img src="/images/profil.png" alt='profileImage'/>
                     
                     <div className={style.sellerInfo}>
-                        <h1>Nama : {user.name}</h1>
-                        <h4>Kota : {user.city}</h4>
+                        <h1>Penjual </h1>
+                        <h4>Kota </h4>
                     </div>
                 </div>
             </div>

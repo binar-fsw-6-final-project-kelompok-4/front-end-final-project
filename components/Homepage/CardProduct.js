@@ -8,7 +8,7 @@ export default function CardProduct(props) {
   return (
     <>
       <div id={props.props.id} className={Style.card}>
-        <Link href={`/produk/detail-produk/${props.props.id}`}>
+        <Link href={`/product/${props.props.id}`}>
           <a>
             <img
               src={props.props.images[0].img}
