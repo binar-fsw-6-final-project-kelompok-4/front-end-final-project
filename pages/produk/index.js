@@ -1,12 +1,12 @@
 import { NavBeforeLogin } from "../../components/Navbar/Navbar";
-import Wishlist from '../../components/wishlist'
+import Produk from "../../components/produk"
 import Footer from "../../components/Footer/Footer";
 
-export default function WishList() {
+export default function index() {
     return (
         <div>
             <NavBeforeLogin />
-            <Wishlist />
+            <Produk />
             <Footer />
         </div>
     )

@@ -4,19 +4,19 @@ import Link from "next/link"
 // import { useState } from 'react';
 // import { useRouter } from 'next/router'
 import { useForm } from "react-hook-form";
-import axios from "axios";
 import toast, {Toaster} from "react-hot-toast"
+import axios from "axios";
 
 export default function register(){
   const {register, handleSubmit} = useForm()
   const onSubmit = (data) =>{
-    axios.post("http://localhost:8000/api/v1/users/add",{
+    axios.post("https://fsw6-group4-staging.herokuapp.com/api/v1/users/add",{
         email :data.email,
         password : data.password,
         username : data.username
     })
     .then((suc)=>{
-        toast.success("Regsiter Berhasil", {
+        toast.success("Register Berhasil", {
             duration: 4000,
             position: 'top-center',
         })
@@ -27,7 +27,7 @@ export default function register(){
     })
 
     .catch ((err)=>{
-        toast.error("Regsiter Gagal", {
+        toast.error("Register Gagal", {
             duration: 4000,
             position: 'top-center',
         })
@@ -78,7 +78,7 @@ export default function register(){
                                 </div>
                                 <br></br>
                                 <div className={Styles.button} align="center">
-                                    <input type="submit"  className={Styles.button1} name="submit" value="Masuk"></input>
+                                    <input type="submit" className={Styles.button1} name="submit" value="Register"></input>
                                 </div>
                                     
                                 <div className={Styles.page} align="center">

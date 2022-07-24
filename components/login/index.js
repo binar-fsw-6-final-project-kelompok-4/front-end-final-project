@@ -11,7 +11,7 @@ export default function Login() {
         handleSubmit
     } = useForm();
     const onSubmit = async (val) => {
-        axios.post("http://localhost:8000/api/v1/users/login", {
+        axios.post("https://fsw6-group4-staging.herokuapp.com/api/v1/users/login", {
             email :val.email,
             password : val.password,
             })
