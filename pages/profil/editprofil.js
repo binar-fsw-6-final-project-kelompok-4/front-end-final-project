@@ -1,6 +1,7 @@
-import { NavBeforeLogin } from "../../components/Navbar/Navbar";
+
+import { NavBeforeLogin } from "../../components/Navbar/NavBeforeLogin";
 import EditProfil from '../../components/editprofil';
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer";
 
 export default function editprofil() {
   return (

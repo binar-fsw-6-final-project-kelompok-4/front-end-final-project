@@ -4,12 +4,57 @@ import Link from "next/link"
 import {useForm} from "react-hook-form"
 import toast, { Toaster } from "react-hot-toast"
 import axios from "axios"
+import { useRouter } from "next/router";
 
 export default function Login() {
+
+//   const router = useRouter();
+//   const { register, handleSubmit, errors } = useForm();
+//   const onSubmit = async (data) => {
+//   const { email, password } = data;
+//     const res = await axios
+//       .post("https://fsw6-group4-staging.herokuapp.com/api/v1/users/login", {
+            // email,
+            // password,
+//       })
+//       .then((val) => {
+//         toast.success("Login Success", {
+//           position: "top-center",
+//           autoClose: 5000,
+//           hideProgressBar: false,
+//           closeOnClick: true,
+//           pauseOnHover: true,
+//           draggable: true,
+//           progress: undefined,
+//         });
+
+//         window.localStorage.setItem("token", val.data.data.token);
+//         window.localStorage.setItem("id", val.data.data.user.secureuser.id);
+//         window.localStorage.setItem(
+//           "user",
+//           JSON.stringify(val.data.data.user.secureuser)
+//         );
+//         console.log(val.data.data.user);
+//         router.push({ pathname: "/" });
+//       })
+//       .catch((err) => {
+//         toast.error("Invalid Email or Password", {
+//           position: "top-center",
+//           autoClose: 5000,
+//           hideProgressBar: false,
+//           closeOnClick: true,
+//           pauseOnHover: true,
+//           draggable: true,
+//           progress: undefined,
+//         });
+//       });
+//   };
+
     const {
         register,
         handleSubmit
     } = useForm();
+
     const onSubmit = async (val) => {
         axios.post("https://fsw6-group4-staging.herokuapp.com/api/v1/users/login", {
             email :val.email,
@@ -44,6 +89,7 @@ export default function Login() {
                 });
             });
     }
+
     return(
         <div className={Styles.container}>
             <Head>
@@ -81,7 +127,9 @@ export default function Login() {
                                 <div className={Styles.button} align="center">
                                     <input type="submit" className={Styles.button1} name="submit" value="Masuk"></input>
                                 </div>
-                                    
+                            </div>
+                        </form>
+                            <div className={Styles.box}> 
                                 <div className={Styles.page} align="center">
                                     <p>Belum Memiliki Akun?</p>
                                     <div className={Styles.link}>
@@ -89,7 +137,6 @@ export default function Login() {
                                     </div>
                                 </div>
                             </div>
-                        </form>
                     </div>
                 </div>    
         </div>

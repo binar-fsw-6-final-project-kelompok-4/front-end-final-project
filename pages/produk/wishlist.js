@@ -1,6 +1,6 @@
-import { NavBeforeLogin } from "../../components/Navbar/Navbar";
+import { NavBeforeLogin } from "../../components/Navbar/NavBeforeLogin";
 import Wishlist from '../../components/wishlist'
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer";
 
 export default function WishList() {
     return (

@@ -1,6 +1,6 @@
-import { NavBeforeLogin } from "../../components/Navbar/Navbar";
+import { NavBeforeLogin } from "../../components/Navbar/NavBeforeLogin";
 import Produk from "../../components/produk"
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer";
 
 export default function index() {
     return (

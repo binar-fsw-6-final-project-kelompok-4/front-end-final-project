@@ -2,10 +2,10 @@
 import { useState, useEffect } from 'react';
 import Carousel from 'react-elastic-carousel';
 
-import { NavbarProfile } from '../../../components/Navbar/Navbar';
-import Images from '../../../components/produkImg';
-import Footer from '../../../components/Footer';
-import style from '../../../styles/produkDetail.module.css';
+import { NavbarProfile } from '../../components/Navbar/Navbar';
+import Images from '../../components/produkImg';
+import Footer from '../../components/Footer';
+import style from '../../styles/produkDetail.module.css';
 
 import { useRouter } from 'next/router';
 import axios from "axios"
