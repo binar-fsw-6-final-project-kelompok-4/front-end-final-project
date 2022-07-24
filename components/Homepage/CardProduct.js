@@ -10,7 +10,7 @@ export default function CardProduct(props) {
   return (
     <>
       <div id={props.props.id} className={styles.card}>
-        <Link href={`/product/${props.props.id}`}>
+        <Link href={`https://fsw6-group4-staging.herokuapp.com/halamanproduk?id=${props.props.id}`}>
           <a>
             <img
               // src={props.props.Images[0].product_img}
