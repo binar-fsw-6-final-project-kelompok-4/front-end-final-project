@@ -4,12 +4,15 @@ import Link from "next/link"
 import {useForm} from "react-hook-form"
 import toast, { Toaster } from "react-hot-toast"
 import axios from "axios"
+import { useRouter } from "next/router";
 
 export default function Login() {
+
     const {
         register,
         handleSubmit
     } = useForm();
+
     const onSubmit = async (val) => {
         axios.post("https://fsw6-group4-staging.herokuapp.com/api/v1/users/login", {
             email :val.email,
@@ -44,6 +47,8 @@ export default function Login() {
                 });
             });
     }
+
+    
     return(
         <div className={Styles.container}>
             <Head>
@@ -81,7 +86,9 @@ export default function Login() {
                                 <div className={Styles.button} align="center">
                                     <input type="submit" className={Styles.button1} name="submit" value="Masuk"></input>
                                 </div>
-                                    
+                            </div>
+                        </form>
+                            <div className={Styles.box}> 
                                 <div className={Styles.page} align="center">
                                     <p>Belum Memiliki Akun?</p>
                                     <div className={Styles.link}>
@@ -89,7 +96,6 @@ export default function Login() {
                                     </div>
                                 </div>
                             </div>
-                        </form>
                     </div>
                 </div>    
         </div>

@@ -1,26 +1,23 @@
-/* eslint-disable @next/next/no-img-element */
+
 import React from "react";
 import Link from "next/link";
-import styles from "../../styles/Card_Produk.module.css";
-
-
+import Style from "../../styles/Card_Produk.module.css";
 
 export default function CardProduct(props) {
-  console.log('id: ', props.props.id)
+  console.log('id produk: ', props.props.id)
   return (
     <>
-      <div id={props.props.id} className={styles.card}>
-        <Link href={`https://fsw6-group4-staging.herokuapp.com/halamanproduk?id=${props.props.id}`}>
+      <div id={props.props.id} className={Style.card}>
+        <Link href={`/product/${props.props.id}`}>
           <a>
             <img
-              // src={props.props.Images[0].product_img}
               src={props.props.images[0].img}
-              alt="Image not available"
-              className={styles.imgProduk}
+              alt="Image Tidak Ditemukan"
+              className={Style.imgProduk}
             />
-            <p className={styles.nama}>{props.props.product_name}</p>
-            <p className={styles.category}>{props.props.category}</p>
-            <p className={styles.price}>Rp {props.props.price}</p>
+            <p className={Style.nama}>{props.props.product_name}</p>
+            <p className={Style.category}>{props.props.category}</p>
+            <p className={Style.price}>Rp {props.props.price}</p>
           </a>
         </Link> 
       </div>

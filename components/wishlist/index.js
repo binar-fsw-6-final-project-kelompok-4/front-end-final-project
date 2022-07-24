@@ -1,6 +1,6 @@
-import styles from "./wishlist.module.css"
 import Head from "next/head"
 import Image from "next/image"
+import styles from "./wishlist.module.css"
 
 export default function Wishlist(){
     return(

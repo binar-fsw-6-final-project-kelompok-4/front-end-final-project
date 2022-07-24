@@ -1,11 +1,12 @@
+
 import Head from "next/head"
-import Styles from "./register.module.css"
 import Link from "next/link"
-// import { useState } from 'react';
-// import { useRouter } from 'next/router'
+
 import { useForm } from "react-hook-form";
 import toast, {Toaster} from "react-hot-toast"
 import axios from "axios";
+
+import Styles from "./register.module.css"
 
 export default function register(){
   const {register, handleSubmit} = useForm()
