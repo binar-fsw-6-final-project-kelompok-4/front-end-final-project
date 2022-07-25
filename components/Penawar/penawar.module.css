@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* width */
 .InfoPenawar::-webkit-scrollbar {
     width: 10px;
@@ -174,7 +173,6 @@
 }
 /* Akhir Produk Penawar */
 
-=======
 @media screen and (min-width: 992px) {
     .InfoPenawar::-webkit-scrollbar{
     width: 10px;
@@ -521,4 +519,3 @@
     }
     /* Akhir Produk Penawar */
 }
->>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13
