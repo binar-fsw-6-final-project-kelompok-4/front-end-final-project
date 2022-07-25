@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Awal Modal Pop Up */
 .Modals{
     position: absolute;
@@ -132,7 +132,7 @@
     /* padding-left: 10px; */
 }
 /* Akhir Modal Pop Up */
-=======
+
 @media screen and (min-width: 992px) {
     /* Awal Modal Pop Up */
     .Modals{
@@ -435,4 +435,3 @@
     }
     /* Akhir Modal Pop Up */
 }
->>>>>>> b84d5bb62e3c7323848af43d4b1667d2de820b13

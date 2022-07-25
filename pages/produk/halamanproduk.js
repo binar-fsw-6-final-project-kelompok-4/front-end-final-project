@@ -1,6 +1,6 @@
-import { NavBeforeLogin } from "../../components/Navbar/Navbar";
+import { NavBeforeLogin } from "../../components/Navbar/NavBeforeLogin";
 import Product from "../../components/HalamanProduk"
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer";
 
 export default function HalamanProduk() {
     return (

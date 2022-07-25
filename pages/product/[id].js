@@ -2,18 +2,18 @@
 import { useState, useEffect } from 'react';
 import Carousel from 'react-elastic-carousel';
 
-import { NavbarProfile } from '../../../components/Navbar/Navbar';
-import Images from '../../../components/produkImg';
-import Footer from '../../../components/Footer';
-import style from '../../../styles/produkDetail.module.css';
+import { NavbarProfile } from '../../components/Navbar/Navbar';
+import Images from '../../components/produkImg';
+import Footer from '../../components/Footer';
+import style from '../../styles/produkDetail.module.css';
 
 import { useRouter } from 'next/router';
 import axios from "axios"
 
 const DetailProduct = () => {
     const [product, setProduct] = useState([])
-    const [user, setUser] = useState([]);
-    const [userImage, setUserImage] = useState([]);
+    // const [user, setUser] = useState("");
+    // const [userImage, setUserImage] = useState("");
 
     const [images, setImages] = useState([])
     const [popProductImage, setPopProductImage] = useState([])
@@ -28,9 +28,11 @@ const DetailProduct = () => {
         try {
             const response = await axios.get(`https://fsw6-group4-staging.herokuapp.com/api/v1/products/info/${router.query.id}`)
             setProduct(response.data.data[0])
-            setUser(response.data.data[0].users);
-            setUserImage(response.data.data[0].users.profile_img);
-            console.log('user produk ini : ', response.data.data[0].users)
+
+            // setUser(response.data.data[0].users);
+            // setUserImage(response.data.data[0].users.profile_img);
+            // console.log('user produk ini : ', response.data.data[0].users)
+
             setImages(response.data.data[0].images)
             setPopProductImage(response.data.data[0].images[0].img)
         }
@@ -79,11 +81,11 @@ const DetailProduct = () => {
                 </div>
                 
                 <div className={style.bottom}>
-                    <img src={userImage} alt='profileImage'/>
+                    <img src="/images/profil.png" alt='profileImage'/>
                     
                     <div className={style.sellerInfo}>
-                        <h1>Nama : </h1>
-                        <h4>Kota : </h4>
+                        <h1>Penjual </h1>
+                        <h4>Kota </h4>
                     </div>
                 </div>
             </div>

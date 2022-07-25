@@ -67,5 +67,5 @@ export default function Tambahproduk(){
                     </form>
                 </div>
         </div>
-    )
+    );
 }
